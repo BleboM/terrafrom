@@ -76,3 +76,9 @@ resource "aws_instance" "vm1" {
 output "PublicIpAddress" {
   value = aws_instance.vm1.public_ip
 }
+
+
+resource "aws_s3_bucket" "grantsbucket" {
+  bucket = "bootg02102024"
+  
+}

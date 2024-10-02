@@ -18,9 +18,9 @@ variable "location" {
 }
 variable "publickey" {
   type = string
-  
+
 }
 variable "privatekey" {
   type = string
-  
+
 }

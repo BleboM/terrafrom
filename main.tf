@@ -13,13 +13,18 @@ provider "aws" {
   region     = var.location
 }
 
-terraform { 
-  cloud { 
-    
-    organization = "Natwest_G" 
 
-    workspaces { 
-      name = "grant_cli" 
-    } 
-  } 
+
+
+
+
+
+terraform {
+  cloud {
+    organization = "Natwest_G"
+    hostname     = "app.terraform.io"
+    workspaces {
+      tags = ["grant"]
+    }
+  }
 }

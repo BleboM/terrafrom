@@ -82,3 +82,8 @@ resource "aws_s3_bucket" "grantsbucket" {
   bucket = "bootg02102024"
   
 }
+
+resource "aws_s3_bucket" "grantbucket" {
+  bucket = "boot2202102024"
+  
+}
